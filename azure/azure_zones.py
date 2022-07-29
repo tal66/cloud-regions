@@ -1,17 +1,16 @@
-import itertools
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-
 delimiter = ";"
-az_out_file = "../files/result_azure_zones.txt"
+az_out_file = "files/result_azure_zones.txt"
 
 resp = requests.get("https://azure.microsoft.com/en-us/global-infrastructure/geographies/")
 soup = BeautifulSoup(resp.content, "html.parser")
 tables = soup.select(".geo-tabs")
 
-lines = []
+header = delimiter.join(("Region", "Location", "Year opened", "Availability Zones"))
+lines = [header]
 
 for t in tables:
     for table in t.select(".data-table__table"):
@@ -40,14 +39,6 @@ for t in tables:
                 )
                 lines.append(line)
 
-header = delimiter.join(
-    (
-        "Region",
-        "Location",
-        "Year opened",
-        "Availability Zones",
-    )
-)
 
-txt = f"{header}\n" + "\n".join(lines)
+txt = "\n".join(lines)
 Path(az_out_file).write_text(txt)

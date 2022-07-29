@@ -12,8 +12,8 @@ soup = BeautifulSoup(res.content, "html.parser")
 data = soup.select("devsite-filter")
 trs = data[0].select("tr")
 
-headers = "Region;Zones;Location;Continent"
-lines = [headers]
+header = delimiter.join(("Region", "Zones", "Location", "Continent"))
+lines = [header]
 zones = []
 region = None
 
@@ -42,7 +42,9 @@ txt_line = delimiter.join((curr_region, str(zones), location_split))
 lines.append(txt_line)
 
 txt = "\n".join(lines)
-txt = txt.replace("Frankfurt; Germany Europe", "Frankfurt, Germany; Europe")  # missing comma on website
+txt = txt.replace(
+    f"Frankfurt{delimiter} Germany Europe", f"Frankfurt, Germany{delimiter} Europe"
+)  # missing comma on website
 Path(result_filename).write_text(txt)
 
 print(f"Results in: {result_filename}")
