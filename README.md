@@ -1,6 +1,8 @@
 ## AWS, Azure, GCP: Regions and Availability Zones
 
 Last update: <span id="date">29/07/2022<span>
+  
+[full screen](README.md)
 
 ### AWS
 
