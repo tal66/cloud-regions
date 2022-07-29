@@ -34,7 +34,7 @@ func GetData() {
 	}
 	defer file.Close()
 
-	cmd := exec.Command("cmd", "/C", "az", "account", "list-locations")
+	cmd := exec.Command("az", "account", "list-locations")
 	cmd.Stdout = file
 	err = cmd.Run()
 	if err != nil {

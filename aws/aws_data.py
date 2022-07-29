@@ -25,13 +25,13 @@ for region in aws_regions["Regions"]:
     for z in availability_zones["AvailabilityZones"]:
         zones.append(z["ZoneName"])
 
-    result_list.append(delimiter.join([region_name, region_long_name, str(zones)]))
+    result_list.append(delimiter.join((region_name, region_long_name, str(zones))))
     print(region_name)
 
 result_list.sort()
 
 with open(result_filename, "w") as csvfile:
-    csvfile.write(delimiter.join(["name", "displayName", "zones"]) + "\n")
-    csvfile.writelines("\n".join(result_list))
+    csvfile.write(delimiter.join(("name", "displayName", "zones")) + "\n")
+    csvfile.write("\n".join(result_list))
 
 print(f"\nResults in: {result_filename}")

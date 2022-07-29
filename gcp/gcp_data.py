@@ -13,9 +13,7 @@ data = soup.select("devsite-filter")
 trs = data[0].select("tr")
 
 headers = "Region;Zones;Location;Continent"
-lines = [
-    headers,
-]
+lines = [headers]
 zones = []
 region = None
 
@@ -29,7 +27,7 @@ for tr in islice(trs, 1, None):
         continue
 
     if region:
-        txt_line = delimiter.join([region, str(zones), location_split])
+        txt_line = delimiter.join((region, str(zones), location_split))
         lines.append(txt_line)
 
     zones.clear()
@@ -40,7 +38,7 @@ for tr in islice(trs, 1, None):
     location_split = delimiter.join(location.rsplit(",", 1))
 
 
-txt_line = delimiter.join([curr_region, str(zones), location_split])
+txt_line = delimiter.join((curr_region, str(zones), location_split))
 lines.append(txt_line)
 
 txt = "\n".join(lines)
