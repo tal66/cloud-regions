@@ -9,7 +9,7 @@ resp = requests.get("https://azure.microsoft.com/en-us/global-infrastructure/geo
 soup = BeautifulSoup(resp.content, "html.parser")
 tables = soup.select(".geo-tabs")
 
-header = delimiter.join(("Region", "Location", "Year opened", "Availability Zones"))
+header = delimiter.join(["Region", "Location", "Year opened", "Availability Zones"])
 lines = [header]
 
 for t in tables:
@@ -30,12 +30,12 @@ for t in tables:
 
             for i in range(len(regions)):
                 line = delimiter.join(
-                    (
+                    [
                         regions[i],
                         location_row[i].getText().strip(),
                         year_row[i].getText().strip(),
                         zones_row[i].getText().strip(),
-                    )
+                    ]
                 )
                 lines.append(line)
 

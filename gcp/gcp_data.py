@@ -12,7 +12,7 @@ soup = BeautifulSoup(res.content, "html.parser")
 data = soup.select("devsite-filter")
 trs = data[0].select("tr")
 
-header = delimiter.join(("Region", "Zones", "Location", "Continent"))
+header = delimiter.join(["Region", "Zones", "Location", "Continent"])
 lines = [header]
 zones = []
 region = None
@@ -27,7 +27,7 @@ for tr in islice(trs, 1, None):
         continue
 
     if region:
-        txt_line = delimiter.join((region, str(zones), location_split))
+        txt_line = delimiter.join([region, str(zones), location_split])
         lines.append(txt_line)
 
     zones.clear()
@@ -38,13 +38,16 @@ for tr in islice(trs, 1, None):
     location_split = delimiter.join(location.rsplit(",", 1))
 
 
-txt_line = delimiter.join((curr_region, str(zones), location_split))
+txt_line = delimiter.join([curr_region, str(zones), location_split])
 lines.append(txt_line)
+
+lines.sort()
 
 txt = "\n".join(lines)
 txt = txt.replace(
     f"Frankfurt{delimiter} Germany Europe", f"Frankfurt, Germany{delimiter} Europe"
 )  # missing comma on website
+
 Path(result_filename).write_text(txt)
 
 print(f"Results in: {result_filename}")

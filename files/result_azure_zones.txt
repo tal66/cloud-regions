@@ -26,8 +26,6 @@ North Europe;Ireland;2009;Available with 3 zones
 West Europe;Netherlands;2010;Available with 3 zones
 Finland Central;Helsinki;Coming soon;Coming soon
 France Central;Paris;2018;Available with 3 zones
-Germany Central (Sovereign);Frankfurt;2016;Nearest region with zones available: Germany West Central
-Germany Northeast (Sovereign);Magdeburg;2016;Nearest region with zones available: Germany West Central
 Germany West Central;Frankfurt;2019;Available with 3 zones
 Greece Central;Athens;Coming soon;Coming soon
 Italy North;Milan;Coming soon;Coming soon
@@ -63,5 +61,5 @@ US Sec West;Undisclosed;2020;Nearest region with zones available: US Gov Virgini
 US Sec West Central;Undisclosed;Coming soon;Nearest region with zones available: US Gov Virginia
 South Africa North;Johannesburg;2019;Available with 3 zones
 Israel Central;Israel;Coming soon;Coming soon
-Qatar Central;Doha;Coming soon;Coming soon
-UAE North;Dubai;2019;Coming soon
+Qatar Central;Doha;2022;Available with 3 zones
+UAE North;Dubai;2019;Available with 3 zones

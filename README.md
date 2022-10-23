@@ -1,7 +1,7 @@
 ## AWS, Azure, GCP: Regions and Availability Zones
 
-Last update: <span id="date">29/07/2022<span>
-  
+Last update: <span id="date">14/10/2022<span>
+
 [full screen](README.md)
 
 ### AWS
@@ -85,8 +85,10 @@ centraluseuap|(US) Central US EUAP|US||-93.6208|41.5908
 eastus|(US) East US|US|Virginia|-79.8164|37.3719
 eastus2|(US) East US 2|US|Virginia|-78.3889|36.6681
 eastus2euap|(US) East US 2 EUAP|US||-78.3889|36.6681
+eastusstg|(US) East US STG|US|Virginia|-79.8164|37.3719
 northcentralus|(US) North Central US|US|Illinois|-87.6278|41.8819
 southcentralus|(US) South Central US|US|Texas|-98.5|29.4167
+southcentralusstg|(US) South Central US STG|US|Texas|-98.5|29.4167
 westcentralus|(US) West Central US|US|Wyoming|-110.234|40.890
 westus|(US) West US|US|California|-122.417|37.783
 westus2|(US) West US 2|US|Washington|-119.852|47.233
@@ -126,8 +128,6 @@ North Europe|Ireland|2009|Available with 3 zones
 West Europe|Netherlands|2010|Available with 3 zones
 Finland Central|Helsinki|Coming soon|Coming soon
 France Central|Paris|2018|Available with 3 zones
-Germany Central (Sovereign)|Frankfurt|2016|Nearest region with zones available: Germany West Central
-Germany Northeast (Sovereign)|Magdeburg|2016|Nearest region with zones available: Germany West Central
 Germany West Central|Frankfurt|2019|Available with 3 zones
 Greece Central|Athens|Coming soon|Coming soon
 Italy North|Milan|Coming soon|Coming soon
@@ -163,9 +163,8 @@ US Sec West|Undisclosed|2020|Nearest region with zones available: US Gov Virgini
 US Sec West Central|Undisclosed|Coming soon|Nearest region with zones available: US Gov Virginia
 South Africa North|Johannesburg|2019|Available with 3 zones
 Israel Central|Israel|Coming soon|Coming soon
-Qatar Central|Doha|Coming soon|Coming soon
-UAE North|Dubai|2019|Coming soon
-</span>
+Qatar Central|Doha|2022|Available with 3 zones
+UAE North|Dubai|2019|Available with 3 zones</span>
 
 <br>
 
@@ -186,8 +185,8 @@ asia-southeast1|['asia-southeast1-a', 'asia-southeast1-b', 'asia-southeast1-c']|
 asia-southeast2|['asia-southeast2-a', 'asia-southeast2-b', 'asia-southeast2-c']|Jakarta, Indonesia| APAC
 australia-southeast1|['australia-southeast1-a', 'australia-southeast1-b', 'australia-southeast1-c']|Sydney, Australia| APAC
 australia-southeast2|['australia-southeast2-a', 'australia-southeast2-b', 'australia-southeast2-c']|Melbourne, Australia| APAC
-europe-north1|['europe-north1-a', 'europe-north1-b', 'europe-north1-c']|Hamina, Finland| Europe
 europe-central2|['europe-central2-a', 'europe-central2-b', 'europe-central2-c']|Warsaw, Poland| Europe
+europe-north1|['europe-north1-a', 'europe-north1-b', 'europe-north1-c']|Hamina, Finland| Europe
 europe-southwest1|['europe-southwest1-a', 'europe-southwest1-b', 'europe-southwest1-c']|Madrid, Spain| Europe
 europe-west1|['europe-west1-b', 'europe-west1-c', 'europe-west1-d']|St. Ghislain, Belgium| Europe
 europe-west2|['europe-west2-a', 'europe-west2-b', 'europe-west2-c']|London, England| Europe
@@ -196,6 +195,7 @@ europe-west4|['europe-west4-a', 'europe-west4-b', 'europe-west4-c']|Eemshaven, N
 europe-west6|['europe-west6-a', 'europe-west6-b', 'europe-west6-c']|Zurich, Switzerland| Europe
 europe-west8|['europe-west8-a', 'europe-west8-b', 'europe-west8-c']|Milan, Italy| Europe
 europe-west9|['europe-west9-a', 'europe-west9-b', 'europe-west9-c']|Paris, France| Europe
+me-west1|['me-west1-a', 'me-west1-b', 'me-west1-c']|Tel Aviv, Israel| Middle East
 northamerica-northeast1|['northamerica-northeast1-a', 'northamerica-northeast1-b', 'northamerica-northeast1-c']|Montréal, Québec| North America
 northamerica-northeast2|['northamerica-northeast2-a', 'northamerica-northeast2-b', 'northamerica-northeast2-c']|Toronto, Ontario| North America
 southamerica-east1|['southamerica-east1-a', 'southamerica-east1-b', 'southamerica-east1-c']|Osasco, São Paulo, Brazil| South America
@@ -204,10 +204,10 @@ us-central1|['us-central1-a', 'us-central1-b', 'us-central1-c', 'us-central1-f']
 us-east1|['us-east1-b', 'us-east1-c', 'us-east1-d']|Moncks Corner, South Carolina| North America
 us-east4|['us-east4-a', 'us-east4-b', 'us-east4-c']|Ashburn, Virginia| North America
 us-east5|['us-east5-a', 'us-east5-b', 'us-east5-c']|Columbus, Ohio| North America
+us-south1|['us-south1-a', 'us-south1-b', 'us-south1-c']|Dallas, Texas| North America
 us-west1|['us-west1-a', 'us-west1-b', 'us-west1-c']|The Dalles, Oregon| North America
 us-west2|['us-west2-a', 'us-west2-b', 'us-west2-c']|Los Angeles, California| North America
 us-west3|['us-west3-a', 'us-west3-b', 'us-west3-c']|Salt Lake City, Utah| North America
-us-west4|['us-west4-a', 'us-west4-b', 'us-west4-c']|Las Vegas, Nevada| North America
-us-south1|['us-south1-a', 'us-south1-b', 'us-south1-c']|Dallas, Texas| North America</span>
+us-west4|['us-west4-a', 'us-west4-b', 'us-west4-c']|Las Vegas, Nevada| North America</span>
 
 <br>
