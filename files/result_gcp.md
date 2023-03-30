@@ -14,6 +14,7 @@ australia-southeast2|['australia-southeast2-a', 'australia-southeast2-b', 'austr
 europe-central2|['europe-central2-a', 'europe-central2-b', 'europe-central2-c']|Warsaw, Poland| Europe
 europe-north1|['europe-north1-a', 'europe-north1-b', 'europe-north1-c']|Hamina, Finland| Europe
 europe-southwest1|['europe-southwest1-a', 'europe-southwest1-b', 'europe-southwest1-c']|Madrid, Spain| Europe
+europe-west12|['europe-west12-a', 'europe-west12-b', 'europe-west12-c']|Turin, Italy| Europe
 europe-west1|['europe-west1-b', 'europe-west1-c', 'europe-west1-d']|St. Ghislain, Belgium| Europe
 europe-west2|['europe-west2-a', 'europe-west2-b', 'europe-west2-c']|London, England| Europe
 europe-west3|['europe-west3-a', 'europe-west3-b', 'europe-west3-c']|Frankfurt, Germany| Europe

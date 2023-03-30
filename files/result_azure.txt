@@ -44,7 +44,6 @@ eastus2euap;(US) East US 2 EUAP;US;;-78.3889;36.6681
 eastusstg;(US) East US STG;US;Virginia;-79.8164;37.3719
 northcentralus;(US) North Central US;US;Illinois;-87.6278;41.8819
 southcentralus;(US) South Central US;US;Texas;-98.5;29.4167
-southcentralusstg;(US) South Central US STG;US;Texas;-98.5;29.4167
 westcentralus;(US) West Central US;US;Wyoming;-110.234;40.890
 westus;(US) West US;US;California;-122.417;37.783
 westus2;(US) West US 2;US;Washington;-119.852;47.233
