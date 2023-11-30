@@ -1,4 +1,4 @@
-name;displayName;geographyGroup;city/state;lon;lat
+var azureData = `
 southafricanorth;(Africa) South Africa North;Africa;Johannesburg;28.21837;-25.73134
 southafricawest;(Africa) South Africa West;Africa;Cape Town;18.843266;-34.075691
 australiacentral;(Asia Pacific) Australia Central;Asia Pacific;Canberra;149.1244;-35.3075
@@ -39,7 +39,7 @@ uaecentral;(Middle East) UAE Central;Middle East;Abu Dhabi;54.366669;24.466667
 uaenorth;(Middle East) UAE North;Middle East;Dubai;55.316666;25.266666
 brazilsouth;(South America) Brazil South;South America;Sao Paulo State;-46.633;-23.55
 brazilsoutheast;(South America) Brazil Southeast;South America;Rio;-43.2075;-22.90278
-brazilus;(South America) Brazil US;South America;;0;0
+brazilus;(South America) Brazil US;South America;;-52.317885327;-8.6678785040
 centralus;(US) Central US;US;Iowa;-93.6208;41.5908
 centraluseuap;(US) Central US EUAP;US;;-93.6208;41.5908
 eastus;(US) East US;US;Virginia;-79.8164;37.3719
@@ -53,3 +53,4 @@ westcentralus;(US) West Central US;US;Wyoming;-110.234;40.89
 westus;(US) West US;US;California;-122.417;37.783
 westus2;(US) West US 2;US;Washington;-119.852;47.233
 westus3;(US) West US 3;US;Phoenix;-112.074036;33.448376
+`;

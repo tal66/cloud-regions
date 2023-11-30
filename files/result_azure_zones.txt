@@ -10,14 +10,15 @@ China North;Beijing;2014;Nearest region with zones: China North 3
 China North 2;Beijing;2018;Nearest region with zones: China North 3
 China North 3;Hebei;2022;Available with 3 zones
 Central India;Pune;2015;Available with 3 zones
+India South Central;Hyderabad;Coming soon;Coming soon
 South India;Chennai;2015;Nearest region with zones coming soon: Central India
-Southcentral India;Hyderabad;Coming soon;Coming soon
 Indonesia Central;Jakarta;Coming soon;Coming soon
 Japan East;Tokyo, Saitama;2014;Available with 3 zones
 Japan West;Osaka;2014;Nearest region with zones available: Japan East
 Korea Central;Seoul;2017;Available with 3 zones
 Malaysia West;Kuala Lumpur;Coming soon;Coming soon
 New Zealand North;Auckland;Coming soon;Coming soon
+Saudi Arabia Central;Saudi Arabia;Coming soon;Coming soon
 Taiwan North;Taipei;Coming soon;Coming soon
 Austria East;Vienna;Coming soon;Coming soon
 Belgium Central;Brussels;Coming soon;Coming soon
@@ -28,9 +29,9 @@ Finland Central;Helsinki;Coming soon;Coming soon
 France Central;Paris;2018;Available with 3 zones
 Germany West Central;Frankfurt;2019;Available with 3 zones
 Greece Central;Athens;Coming soon;Coming soon
-Italy North;Milan;Coming soon;Coming soon
+Italy North;Milan;2023;Available with 3 zones
 Norway East;Oslo;2019;Available with 3 zones
-Poland Central;Warsaw;Coming soon;Coming soon
+Poland Central;Warsaw;2023;Available with 3 zones
 Spain Central;Madrid;Coming soon;Coming soon
 Sweden Central;Gävle;2021;Available with 3 zones
 Switzerland North;Zürich;2019;Available with 3 zones
@@ -60,6 +61,6 @@ US Sec East;Undisclosed;2020;Nearest region with zones available: US Gov Virgini
 US Sec West;Undisclosed;2020;Nearest region with zones available: US Gov Virginia
 US Sec West Central;Undisclosed;Coming soon;Nearest region with zones available: US Gov Virginia
 South Africa North;Johannesburg;2019;Available with 3 zones
-Israel Central;Israel;Coming soon;Coming soon
+Israel Central;Israel;2023;Available with 3 zones
 Qatar Central;Doha;2022;Available with 3 zones
 UAE North;Dubai;2019;Available with 3 zones

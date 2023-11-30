@@ -1,32 +1,43 @@
+import json
+import subprocess
+
 import boto3
 
 result_filename = "files/result_aws.txt"
 delimiter = ";"
 
-aws_regions = boto3.client("ec2").describe_regions()
+# script uses different commands because of permission problems for not opted-in regions
+
 result_list = []
 
-for region in aws_regions["Regions"]:
-    region_name = region["RegionName"]
+cmd = 'aws ec2 describe-regions --all-regions --output json --query "Regions[].RegionName"'
+output = subprocess.check_output(cmd, shell=True)
+aws_regions = json.loads(output.decode('utf-8'))
+print(f"{len(aws_regions)} regions")
+
+for region in aws_regions:
+    region_name = region
 
     try:
-        ssm_client = boto3.client("ssm", region_name=region_name)
-        query = "/aws/service/global-infrastructure/regions/%s/longName" % region_name
-        ssm_response = ssm_client.get_parameter(Name=query)
-        region_long_name = ssm_response["Parameter"]["Value"]
+        cmd = f"aws ssm get-parameters-by-path --path /aws/service/global-infrastructure/regions/{region}"        
+        output = subprocess.check_output(cmd, shell=True)
+        data = json.loads(output.decode('utf-8')).get("Parameters", [])
+        region_long_name = next((param["Value"] for param in data if "longName" in param["Name"]), None)
     except:
         region_long_name = ""
 
     client = boto3.client("ec2", region_name=region_name)
-    region_filter = [{"Name": "region-name", "Values": [region_name]}]
-    availability_zones = client.describe_availability_zones(Filters=region_filter)
+    try:
+        region_filter = [{"Name": "region-name", "Values": [region_name]}]
+        availability_zones = client.describe_availability_zones(Filters=region_filter)["AvailabilityZones"]
+    except:
+        availability_zones = [] # not opted-in for this region
 
     zones = []
-    for z in availability_zones["AvailabilityZones"]:
+    for z in availability_zones:
         zones.append(z["ZoneName"])
-
     result_list.append(delimiter.join([region_name, region_long_name, str(zones)]))
-    print(region_name)
+    print(region_name, region_long_name)
 
 result_list.sort()
 

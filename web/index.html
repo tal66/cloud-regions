@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Regions</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding-inline: 6rem;
+            margin-block: 2rem;
+        }
+
+        #map {
+            min-height: 500px;
+            height: 650px;
+            max-width: 110rem;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+
+<body>
+    <h2>Cloud Regions: GCP, Azure, AWS</h2>
+    <div id="map">
+    </div>
+    <div>
+        <ul>
+            <li><b>Usage</b>:
+                <ul>
+                    <li>Filter on upper-right.</li>
+                    <li>Press on marker to display more info.</li>
+                </ul>
+            </li>
+            <li>Location data is an <b>approximation</b>. cloud providers do not disclose the exact location.</li>
+            <li>Data provided might contain errors or inaccuracies, for which I'm not legally responsible.</li>
+            <li>Open source: <a href="https://github.com/tal66/cloud-regions">https://github.com/tal66/cloud-regions</a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="./leaflet-color-markers/leaflet-color-markers.js"></script>
+<script src="./data/azureData.js"></script>
+<script src="./data/gcpData.js"></script>
+<script src="./data/awsData.js"></script>
+<script src="./script.js"></script>
+
+</html>
