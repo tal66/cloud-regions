@@ -6,7 +6,7 @@ Last update: <span id="date">30/11/2023<span>
 
 [Interactive map](https://cloudregionsmap.z6.web.core.windows.net/)
 
-<a href="https://cloudregionsmap.z6.web.core.windows.net/"><img src="files/interactive.png" width="800"/></a>
+<a href="https://cloudregionsmap.z6.web.core.windows.net/"><img src="files/interactive.PNG" width="800"/></a>
 
 
 ### Azure
