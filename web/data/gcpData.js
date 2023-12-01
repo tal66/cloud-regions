@@ -6,8 +6,6 @@ asia-northeast2;['asia-northeast2-a', 'asia-northeast2-b', 'asia-northeast2-c'];
 asia-northeast3;['asia-northeast3-a', 'asia-northeast3-b', 'asia-northeast3-c'];Seoul, South Korea; APAC;37.56152759619316; 126.9933576416437
 asia-south1;['asia-south1-a', 'asia-south1-b', 'asia-south1-c'];Mumbai, India; APAC;19.075983;72.877655
 asia-south2;['asia-south2-a', 'asia-south2-b', 'asia-south2-c'];Delhi, India; APAC;28.704060;77.102493
-asia-south1;['asia-south1-a', 'asia-south1-b', 'asia-south1-c'];Mumbai; India APAC;19.089335748262677; 72.87499701158956
-asia-south2;['asia-south2-a', 'asia-south2-b', 'asia-south2-c'];Delhi; India APAC;28.69883476182754; 77.22780513920172
 asia-southeast1;['asia-southeast1-a', 'asia-southeast1-b', 'asia-southeast1-c'];Jurong West, Singapore; APAC;1.3402841302548933; 103.70592426066537
 asia-southeast2;['asia-southeast2-a', 'asia-southeast2-b', 'asia-southeast2-c'];Jakarta, Indonesia; APAC;-6.211297753867217; 106.82882150666781
 australia-southeast1;['australia-southeast1-a', 'australia-southeast1-b', 'australia-southeast1-c'];Sydney, Australia; APAC;-33.86617379726856; 151.19424078793278

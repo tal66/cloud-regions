@@ -29,7 +29,11 @@ function parse(data, provider) {
 
 function getRegion(fields, provider) {
   if (provider == "azure") {
-    return new Region(fields[0], fields[3], "", fields[4], fields[5]);
+    az = "";
+    if (fields.length > 6) {
+      az = fields[6];
+    }
+    return new Region(fields[0], fields[3], az, fields[4], fields[5]);
   } else if (provider == "gcp") {
     return new Region(fields[0], fields[2], fields[1], fields[5], fields[4]);
   } else if (provider == "aws") {

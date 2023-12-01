@@ -15,11 +15,10 @@ output = subprocess.check_output(cmd, shell=True)
 aws_regions = json.loads(output.decode('utf-8'))
 print(f"{len(aws_regions)} regions")
 
-for region in aws_regions:
-    region_name = region
+for region_name in aws_regions:
 
     try:
-        cmd = f"aws ssm get-parameters-by-path --path /aws/service/global-infrastructure/regions/{region}"        
+        cmd = f"aws ssm get-parameters-by-path --path /aws/service/global-infrastructure/regions/{region_name}"
         output = subprocess.check_output(cmd, shell=True)
         data = json.loads(output.decode('utf-8')).get("Parameters", [])
         region_long_name = next((param["Value"] for param in data if "longName" in param["Name"]), None)
@@ -31,7 +30,7 @@ for region in aws_regions:
         region_filter = [{"Name": "region-name", "Values": [region_name]}]
         availability_zones = client.describe_availability_zones(Filters=region_filter)["AvailabilityZones"]
     except:
-        availability_zones = [] # not opted-in for this region
+        availability_zones = []  # not opted-in for this region
 
     zones = []
     for z in availability_zones:

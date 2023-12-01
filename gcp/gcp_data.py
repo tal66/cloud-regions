@@ -1,5 +1,6 @@
 from itertools import islice
 from pathlib import Path
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -37,17 +38,11 @@ for tr in islice(trs, 1, None):
     location = tds[1].get_text()
     location_split = delimiter.join(location.rsplit(",", 1))
 
-
 txt_line = delimiter.join([curr_region, str(zones), location_split])
 lines.append(txt_line)
-
 lines.sort()
 
 txt = "\n".join(lines)
-txt = txt.replace(
-    f"Frankfurt{delimiter} Germany Europe", f"Frankfurt, Germany{delimiter} Europe"
-)  # missing comma on website
-
 Path(result_filename).write_text(txt)
 
 print(f"Results in: {result_filename}")
