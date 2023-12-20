@@ -11,6 +11,7 @@ ap-southeast-2;Asia Pacific (Sydney);['ap-southeast-2a', 'ap-southeast-2b', 'ap-
 ap-southeast-3;Asia Pacific (Jakarta);[];-6.192859696396395; 106.81782496956998
 ap-southeast-4;Asia Pacific (Melbourne);[];-37.80381592816414; 144.95950997233805
 ca-central-1;Canada (Central);['ca-central-1a', 'ca-central-1b', 'ca-central-1d'];45.504710831456606; -73.56906570872823
+ca-west-1;Canada West (Calgary);[]; 51.0486000; -114.0708000
 eu-central-1;Europe (Frankfurt);['eu-central-1a', 'eu-central-1b', 'eu-central-1c'];50.11096846548534; 8.707274845854466
 eu-central-2;Europe (Zurich);[];47.377295936828766; 8.54076598461441
 eu-north-1;Europe (Stockholm);['eu-north-1a', 'eu-north-1b', 'eu-north-1c'];59.32673854153081; 18.077485425748588

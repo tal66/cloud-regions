@@ -11,6 +11,7 @@ ap-southeast-2;Asia Pacific (Sydney);['ap-southeast-2a', 'ap-southeast-2b', 'ap-
 ap-southeast-3;Asia Pacific (Jakarta);[]
 ap-southeast-4;Asia Pacific (Melbourne);[]
 ca-central-1;Canada (Central);['ca-central-1a', 'ca-central-1b', 'ca-central-1d']
+ca-west-1;Canada West (Calgary);[]
 eu-central-1;Europe (Frankfurt);['eu-central-1a', 'eu-central-1b', 'eu-central-1c']
 eu-central-2;Europe (Zurich);[]
 eu-north-1;Europe (Stockholm);['eu-north-1a', 'eu-north-1b', 'eu-north-1c']

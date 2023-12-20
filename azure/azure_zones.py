@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 delimiter = ";"
-az_out_file = "files/result_azure_zones.txt"
+result_filename = "files/result_azure_zones.txt"
 
 resp = requests.get("https://azure.microsoft.com/en-us/global-infrastructure/geographies/")
 soup = BeautifulSoup(resp.content, "html.parser")
@@ -41,4 +41,6 @@ for t in tables:
 
 
 txt = "\n".join(lines)
-Path(az_out_file).write_text(txt)
+Path(result_filename).write_text(txt)
+
+print(f"\nResults in: {result_filename}")

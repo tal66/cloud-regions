@@ -1,6 +1,6 @@
 ## AWS, Azure, GCP: Regions and Availability Zones
 
-Last update: <span id="date">30/11/2023<span>
+Last update: <span id="date">20/12/2023<span>
 
 [full screen](README.md)
 
@@ -8,6 +8,10 @@ Last update: <span id="date">30/11/2023<span>
 
 <a href="https://cloudregionsmap.z6.web.core.windows.net/"><img src="files/interactive.PNG" width="800"/></a>
 
+Contents:
+[AWS](#aws) |
+[Azure](#azure) |
+[GCP](#gcp)
 
 ### Azure
 
@@ -62,7 +66,6 @@ eastus2euap|(US) East US 2 EUAP|US||-78.3889|36.6681
 eastusstg|(US) East US STG|US|Virginia|-79.8164|37.3719
 northcentralus|(US) North Central US|US|Illinois|-87.6278|41.8819
 southcentralus|(US) South Central US|US|Texas|-98.5|29.4167
-southcentralusstg|(US) South Central US STG|US|Texas|-98.5|29.4167
 westcentralus|(US) West Central US|US|Wyoming|-110.234|40.89
 westus|(US) West US|US|California|-122.417|37.783
 westus2|(US) West US 2|US|Washington|-119.852|47.233
@@ -145,6 +148,8 @@ UAE North|Dubai|2019|Available with 3 zones</span>
 
 ---
 
+<br>
+
 ### GCP
 
 <span id="gcp">Region|Zones|Location|Continent
@@ -193,7 +198,10 @@ us-west4|['us-west4-a', 'us-west4-b', 'us-west4-c']|Las Vegas, Nevada| North Ame
 
 ---
 
+<br>
+
 ### AWS
+
 
 *The script doesn't generate az info for opt-in-required regions. you can look it up manually :)  \
 or use `aws ec2 describe-availability-zones --region <region>` if you are opted in (otherwise getting AuthFailure).
@@ -212,6 +220,7 @@ ap-southeast-2|Asia Pacific (Sydney)|['ap-southeast-2a', 'ap-southeast-2b', 'ap-
 ap-southeast-3|Asia Pacific (Jakarta)|[]
 ap-southeast-4|Asia Pacific (Melbourne)|[]
 ca-central-1|Canada (Central)|['ca-central-1a', 'ca-central-1b', 'ca-central-1d']
+ca-west-1|Canada West (Calgary)|[]
 eu-central-1|Europe (Frankfurt)|['eu-central-1a', 'eu-central-1b', 'eu-central-1c']
 eu-central-2|Europe (Zurich)|[]
 eu-north-1|Europe (Stockholm)|['eu-north-1a', 'eu-north-1b', 'eu-north-1c']
