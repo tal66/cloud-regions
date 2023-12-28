@@ -13,7 +13,7 @@ Contents:
 [Azure](#azure) |
 [GCP](#gcp)
 
-### Azure
+## Azure
 
 <span id="azure">name|displayName|geographyGroup|city/state|lon|lat
 --- |--- |--- |--- |--- |--- |
@@ -142,15 +142,12 @@ US Sec West Central|Undisclosed|Coming soon|Nearest region with zones available:
 South Africa North|Johannesburg|2019|Available with 3 zones
 Israel Central|Israel|2023|Available with 3 zones
 Qatar Central|Doha|2022|Available with 3 zones
-UAE North|Dubai|2019|Available with 3 zones</span>
-
+UAE North|Dubai|2019|Available with 3 zones
+</span>
 <br>
 
----
 
-<br>
-
-### GCP
+## GCP
 
 <span id="gcp">Region|Zones|Location|Continent
 --- |--- |--- |--- |
@@ -192,19 +189,15 @@ us-south1|['us-south1-a', 'us-south1-b', 'us-south1-c']|Dallas, Texas| North Ame
 us-west1|['us-west1-a', 'us-west1-b', 'us-west1-c']|The Dalles, Oregon| North America
 us-west2|['us-west2-a', 'us-west2-b', 'us-west2-c']|Los Angeles, California| North America
 us-west3|['us-west3-a', 'us-west3-b', 'us-west3-c']|Salt Lake City, Utah| North America
-us-west4|['us-west4-a', 'us-west4-b', 'us-west4-c']|Las Vegas, Nevada| North America</span>
-
+us-west4|['us-west4-a', 'us-west4-b', 'us-west4-c']|Las Vegas, Nevada| North America
+</span>
 <br>
 
----
-
-<br>
-
-### AWS
 
 
-*The script doesn't generate az info for opt-in-required regions. you can look it up manually :)  \
-or use `aws ec2 describe-availability-zones --region <region>` if you are opted in (otherwise getting AuthFailure).
+## AWS
+
+*The script doesn't generate az info for opt-in-required regions. you can look it up manually, or use `aws ec2 describe-availability-zones --region <region>` if you are opted in (otherwise getting AuthFailure).
 
 | <span id="aws">name|displayName|zones
 --- |--- |--- |
@@ -236,12 +229,10 @@ sa-east-1|South America (Sao Paulo)|['sa-east-1a', 'sa-east-1b', 'sa-east-1c']
 us-east-1|US East (N. Virginia)|['us-east-1a', 'us-east-1b', 'us-east-1c', 'us-east-1d', 'us-east-1e', 'us-east-1f']
 us-east-2|US East (Ohio)|['us-east-2a', 'us-east-2b', 'us-east-2c']
 us-west-1|US West (N. California)|['us-west-1a', 'us-west-1c']
-us-west-2|US West (Oregon)|['us-west-2a', 'us-west-2b', 'us-west-2c', 'us-west-2d']</span>                      |
+us-west-2|US West (Oregon)|['us-west-2a', 'us-west-2b', 'us-west-2c', 'us-west-2d']
+</span>                      
 
 
 
 
 <br>
-
-
-
