@@ -8,7 +8,7 @@ result_filename = "files/result_gcp.txt"
 delimiter = ";"
 
 res = requests.get("https://cloud.google.com/compute/docs/regions-zones")
-soup = BeautifulSoup(res.content, "html.parser")
+soup = BeautifulSoup(res.content.decode('utf-8'), 'html.parser')
 
 data = soup.select("devsite-filter")
 trs = data[0].select("tr")

@@ -3,7 +3,6 @@ PY = python
 .PHONY: azure  
 azure: ## update azure
 	cd ./azure && go run .
-	$(PY) ./azure/azure_zones.py
 
 .PHONY: gcp  
 gcp: ## update gcp

@@ -1,4 +1,5 @@
 var gcpData = `
+africa-south1;['africa-south1-a', 'africa-south1-b', 'africa-south1-c'];Johannesburg; South Africa;-26.21031533; 28.029720082
 asia-east1;['asia-east1-a', 'asia-east1-b', 'asia-east1-c'];Changhua County, Taiwan; APAC;24.153451706503425; 120.66058062308157
 asia-east2;['asia-east2-a', 'asia-east2-b', 'asia-east2-c'];Hong Kong; APAC;22.32408297677555; 114.1654563834792
 asia-northeast1;['asia-northeast1-a', 'asia-northeast1-b', 'asia-northeast1-c'];Tokyo, Japan; APAC;35.68742487971599; 139.76551870398785
@@ -27,6 +28,7 @@ me-central2;['me-central2-a', 'me-central2-b', 'me-central2-c'];Dammam, Saudi Ar
 me-west1;['me-west1-a', 'me-west1-b', 'me-west1-c'];Tel Aviv, Israel; Middle East;32.086331675828596; 34.76686193545308
 northamerica-northeast1;['northamerica-northeast1-a', 'northamerica-northeast1-b', 'northamerica-northeast1-c'];Montréal, Québec; North America;45.50137498130507; -73.58965722980639
 northamerica-northeast2;['northamerica-northeast2-a', 'northamerica-northeast2-b', 'northamerica-northeast2-c'];Toronto, Ontario; North America;43.651121518295106; -79.38905138152333
+northamerica-south1;['northamerica-south1-a', 'northamerica-south1-b', 'northamerica-south1-c'];Queretaro, Mexico; North America;20.580658; -100.418194
 southamerica-east1;['southamerica-east1-a', 'southamerica-east1-b', 'southamerica-east1-c'];Osasco, São Paulo, Brazil; South America;-23.531936481737468; -46.790961383301244
 southamerica-west1;['southamerica-west1-a', 'southamerica-west1-b', 'southamerica-west1-c'];Santiago, Chile; South America;-33.44864972159181; -70.67309812776982
 us-central1;['us-central1-a', 'us-central1-b', 'us-central1-c', 'us-central1-f'];Council Bluffs, Iowa; North America;41.26212299898292; -95.86522216227864

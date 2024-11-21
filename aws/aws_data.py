@@ -1,42 +1,67 @@
 import json
+import os
 import subprocess
 
-import boto3
+import requests
+from bs4 import BeautifulSoup
 
-result_filename = "files/result_aws.txt"
+root_dir = os.path.dirname(os.path.abspath(__file__))
+if os.path.basename(root_dir) == "aws":
+    root_dir = os.path.dirname(root_dir)
+
+result_filename = f"{root_dir}/files/result_aws.txt"
 delimiter = ";"
 
-# script uses different commands because of permission problems for not opted-in regions
+
+def scrape_aws_regions_table():
+    url = "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html"
+    response = requests.get(url)
+    if response.status_code != 200:
+        print(f"Error fetching the AWS regions page: {response.status_code}")
+        return
+
+    soup = BeautifulSoup(response.content.decode('utf-8'), 'html.parser')
+    table = soup.find("table")
+
+    regions = []
+
+    for row in table.find_all("tr")[1:]:
+        cols = row.find_all("td")
+        if len(cols) == 3:
+            region_code = cols[0].text.strip()
+            region_name = cols[1].text.strip()
+            opt_in_status = cols[2].text.strip()
+
+            regions.append(
+                {
+                    "Code": region_code,
+                    "Name": region_name,
+                    "OptInStatus": opt_in_status,
+                }
+            )
+
+    return regions
+
 
 result_list = []
 
-cmd = 'aws ec2 describe-regions --all-regions --output json --query "Regions[].RegionName"'
-output = subprocess.check_output(cmd, shell=True)
-aws_regions = json.loads(output.decode('utf-8'))
-print(f"{len(aws_regions)} regions")
+aws_regions = scrape_aws_regions_table()
+for region in aws_regions:
+    region_name = region["Name"]
+    region_code = region["Code"]
+    opt_in_status = region["OptInStatus"]  # 'Not required' or 'Required'
 
-for region_name in aws_regions:
+    availability_zones = []
+    if opt_in_status == "Not required":
+        try:
+            cmd = f"aws ec2 describe-availability-zones --region {region_code} --output json --query AvailabilityZones[*].ZoneName"
+            output = subprocess.check_output(cmd, shell=True)
+            availability_zones = json.loads(output.decode("utf-8"))
+            print(f"{region_code}: {availability_zones}")
+        except Exception as e:
+            print(f"skip finding azs for {region_code} (error)")
 
-    try:
-        cmd = f"aws ssm get-parameters-by-path --path /aws/service/global-infrastructure/regions/{region_name}"
-        output = subprocess.check_output(cmd, shell=True)
-        data = json.loads(output.decode('utf-8')).get("Parameters", [])
-        region_long_name = next((param["Value"] for param in data if "longName" in param["Name"]), None)
-    except:
-        region_long_name = ""
-
-    client = boto3.client("ec2", region_name=region_name)
-    try:
-        region_filter = [{"Name": "region-name", "Values": [region_name]}]
-        availability_zones = client.describe_availability_zones(Filters=region_filter)["AvailabilityZones"]
-    except:
-        availability_zones = []  # not opted-in for this region
-
-    zones = []
-    for z in availability_zones:
-        zones.append(z["ZoneName"])
-    result_list.append(delimiter.join([region_name, region_long_name, str(zones)]))
-    print(region_name, region_long_name)
+    result_list.append(delimiter.join([region_code, region_name, str(availability_zones)]))
 
 result_list.sort()
 

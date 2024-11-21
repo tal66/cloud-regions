@@ -1,4 +1,5 @@
 Region;Zones;Location;Continent
+africa-south1;['africa-south1-a', 'africa-south1-b', 'africa-south1-c'];Johannesburg; South Africa
 asia-east1;['asia-east1-a', 'asia-east1-b', 'asia-east1-c'];Changhua County, Taiwan; APAC
 asia-east2;['asia-east2-a', 'asia-east2-b', 'asia-east2-c'];Hong Kong; APAC
 asia-northeast1;['asia-northeast1-a', 'asia-northeast1-b', 'asia-northeast1-c'];Tokyo, Japan; APAC
@@ -27,6 +28,7 @@ me-central2;['me-central2-a', 'me-central2-b', 'me-central2-c'];Dammam, Saudi Ar
 me-west1;['me-west1-a', 'me-west1-b', 'me-west1-c'];Tel Aviv, Israel; Middle East
 northamerica-northeast1;['northamerica-northeast1-a', 'northamerica-northeast1-b', 'northamerica-northeast1-c'];Montréal, Québec; North America
 northamerica-northeast2;['northamerica-northeast2-a', 'northamerica-northeast2-b', 'northamerica-northeast2-c'];Toronto, Ontario; North America
+northamerica-south1;['northamerica-south1-a', 'northamerica-south1-b', 'northamerica-south1-c'];Queretaro, Mexico; North America
 southamerica-east1;['southamerica-east1-a', 'southamerica-east1-b', 'southamerica-east1-c'];Osasco, São Paulo, Brazil; South America
 southamerica-west1;['southamerica-west1-a', 'southamerica-west1-b', 'southamerica-west1-c'];Santiago, Chile; South America
 us-central1;['us-central1-a', 'us-central1-b', 'us-central1-c', 'us-central1-f'];Council Bluffs, Iowa; North America

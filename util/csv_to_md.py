@@ -12,7 +12,7 @@ def write_table(in_filename, md_filename):
                 mdfile.write("|".join(values))
 
 
-filenames = ["files/result_aws.txt", "files/result_azure.txt", "files/result_azure_zones.txt", "files/result_gcp.txt"]
+filenames = ["files/result_aws.txt", "files/result_azure.txt", "files/result_gcp.txt"]
 
 for filename in filenames:
     md_filename = f'{filename.removesuffix(".txt")}.md'
