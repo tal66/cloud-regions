@@ -11,6 +11,7 @@ ap-southeast-2;Asia Pacific (Sydney);['ap-southeast-2a', 'ap-southeast-2b', 'ap-
 ap-southeast-3;Asia Pacific (Jakarta);[];-6.192859696396395; 106.81782496956998
 ap-southeast-4;Asia Pacific (Melbourne);[];-37.80381592816414; 144.95950997233805
 ap-southeast-5;Asia Pacific (Malaysia);[];3.13969910343; 101.6633156525
+ap-southeast-7;Asia Pacific (Thailand);[];13.76008147849; 100.5018430435
 ca-central-1;Canada (Central);['ca-central-1a', 'ca-central-1b', 'ca-central-1d'];45.504710831456606; -73.56906570872823
 ca-west-1;Canada West (Calgary);[]; 51.0486000; -114.0708000
 cn-north-1;China (Beijing);[]; 39.9030743766; 116.4015787728
@@ -26,6 +27,7 @@ eu-west-3;Europe (Paris);['eu-west-3a', 'eu-west-3b', 'eu-west-3c'];48.8787676;2
 il-central-1;Israel (Tel Aviv);[];32.0852997;34.7818064
 me-central-1;Middle East (UAE);[];25.180097874154146; 55.23977234437033
 me-south-1;Middle East (Bahrain);[];26.225925293869782; 50.58381581280284
+mx-central-1;Mexico (Central);[];19.4932; -98.9558
 sa-east-1;South America (Sao Paulo);['sa-east-1a', 'sa-east-1b', 'sa-east-1c'];-22.6965925;-47.36527063641172
 us-east-1;US East (N. Virginia);['us-east-1a', 'us-east-1b', 'us-east-1c', 'us-east-1d', 'us-east-1e', 'us-east-1f'];37.25795358720029; -79.37091390587108
 us-east-2;US East (Ohio);['us-east-2a', 'us-east-2b', 'us-east-2c'];40.35011813744123; -82.94801273846309

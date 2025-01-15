@@ -1,6 +1,6 @@
 ## AWS, Azure, GCP: Regions and Availability Zones
 
-Last update: <span id="date">21/11/2024<span>
+Last update: <span id="date">15/01/2025<span>
 
 [full screen](README.md)
 
@@ -130,7 +130,8 @@ us-west4|['us-west4-a', 'us-west4-b', 'us-west4-c']|Las Vegas, Nevada| North Ame
 
 ## AWS
 
-*The script doesn't generate az info for opt-in-required regions. you can look it up manually, or use `aws ec2 describe-availability-zones --region <region>` if you are opted in (otherwise getting AuthFailure).
+*The script doesn't generate az info for opt-in-required regions. \
+Look it up manually, or use `aws ec2 describe-availability-zones --region <region>` if you are opted in (otherwise getting AuthFailure).
 
 | <span id="aws">name|displayName|zones
 --- |--- |--- |
@@ -146,6 +147,7 @@ ap-southeast-2|Asia Pacific (Sydney)|['ap-southeast-2a', 'ap-southeast-2b', 'ap-
 ap-southeast-3|Asia Pacific (Jakarta)|[]
 ap-southeast-4|Asia Pacific (Melbourne)|[]
 ap-southeast-5|Asia Pacific (Malaysia)|[]
+ap-southeast-7|Asia Pacific (Thailand)|[]
 ca-central-1|Canada (Central)|['ca-central-1a', 'ca-central-1b', 'ca-central-1d']
 ca-west-1|Canada West (Calgary)|[]
 cn-north-1|China (Beijing)|[]
@@ -161,6 +163,7 @@ eu-west-3|Europe (Paris)|['eu-west-3a', 'eu-west-3b', 'eu-west-3c']
 il-central-1|Israel (Tel Aviv)|[]
 me-central-1|Middle East (UAE)|[]
 me-south-1|Middle East (Bahrain)|[]
+mx-central-1|Mexico (Central)|[]
 sa-east-1|South America (São Paulo)|['sa-east-1a', 'sa-east-1b', 'sa-east-1c']
 us-east-1|US East (N. Virginia)|['us-east-1a', 'us-east-1b', 'us-east-1c', 'us-east-1d', 'us-east-1e', 'us-east-1f']
 us-east-2|US East (Ohio)|['us-east-2a', 'us-east-2b', 'us-east-2c']
